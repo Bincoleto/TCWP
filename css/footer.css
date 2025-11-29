@@ -1,0 +1,65 @@
+.contato{
+    background-color: #153448;
+    padding: 1.4rem 2rem;
+}
+
+.copy{
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+.contanier-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.contanier-footer h3{
+    color: white;
+    font-size: 30px;
+}
+
+.contanier-footer p{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.contanier-footer a{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.footer-item div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.footer-item div h3{
+    text-align: center;
+    width: 12ch;
+}
+
+.footer-contato{
+    width: 340px;
+}
+
+.footer-contato h3{
+    text-align: center;
+    color: #D8AE71;
+}
+.footer-contato div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    gap: 1rem;
+}

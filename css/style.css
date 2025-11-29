@@ -1,0 +1,9 @@
+@import './global.css';
+@import './topo.css';
+@import './navegacao.css';
+@import './sobrenos.css';
+@import './footer.css';
+
+.produtos{
+    height: 400px;
+}

@@ -1,0 +1,25 @@
+.sobrenos{
+    margin: 40px 60px;
+    text-align: center;
+}
+.sobrenos h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 48px;
+    color: #153448;
+}
+
+.sobrenos p{
+    color: #153448;
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-align: left;
+}
+
+.sobrenos-container{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
