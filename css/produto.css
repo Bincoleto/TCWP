@@ -1,5 +1,6 @@
 .produto-container{
-    margin: 40px 20px;
+    max-width: 1600px;
+    padding: 60px 40px;
 }
 
 .produto-titulo{
@@ -16,11 +17,12 @@
 }
 
 .produto-lista{
-    margin: 2.4rem 10px;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px 60px;
+    margin-top: 2rem;
+
 }
 
 .produto-item{
@@ -30,13 +32,16 @@
     width: 380px;
 }
 
+.produto-item img{
+    height: 310px;
+}
+
 .produto-item-tag{
     background-color:#EE2D2D;
     color: white;
     border-radius: 6px;
     padding: 10px;
-    position: absolute;
-    
+    position: absolute; 
 }
 
 .produto-item-div{

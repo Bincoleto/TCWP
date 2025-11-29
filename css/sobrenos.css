@@ -15,11 +15,20 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     text-align: left;
+    width: 20ch;
 }
 
 .sobrenos-container{
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+}
+
+.sobrenos-container div{
+    display: flex;
+    justify-content: space-around;
+    gap:40px;
+}
+
+.sobrenos-container div img{
+    height: 560px;
 }

@@ -11,6 +11,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
 }
+
 .contanier-footer{
     display: flex;
     justify-content: space-between;
@@ -60,6 +61,10 @@
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    justify-items: left;
+    justify-content: left;
     gap: 1rem;
+}
+
+.footer-contato div a{
+    padding: 0;
 }
