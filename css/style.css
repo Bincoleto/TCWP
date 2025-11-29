@@ -2,8 +2,6 @@
 @import './topo.css';
 @import './navegacao.css';
 @import './sobrenos.css';
+@import './produto.css';
 @import './footer.css';
 
-.produtos{
-    height: 400px;
-}
