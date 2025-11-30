@@ -1,15 +1,33 @@
 .topo-site{
     background-color: #948979;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem ;
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 1.4rem 2rem;
 }
 
 .topo-site h1{
-    color: #ffffff;
-    font-size: 66px;
+    color: white;
+    font-size: 78px;
+    line-height: 1.125;
+    width: 12ch;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
-    width: 14ch;
+    font-weight: 200;
+}
+
+@media (max-width: 900px){
+    .topo-site{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .topo-site img{
+        display: none;
+    }
+
+    .topo-site h1{
+        font-size: 39px;
+    }
 }

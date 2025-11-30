@@ -1,34 +1,62 @@
 .sobrenos{
-    margin: 40px 60px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.sobrenos h2{
+    color: #153448;
+    font-size: 68px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
     text-align: center;
 }
-.sobrenos h2{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
+
+.sobrenos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sobrenos-container div{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+.sobrenos-container div p{
     font-size: 48px;
     color: #153448;
 }
 
-.sobrenos p{
-    color: #153448;
-    font-size: 38px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
-    text-align: left;
-    width: 20ch;
+@media (max-width:1300px){
+    .sobrenos-container div p{
+        font-size: 32px;
+    }
 }
 
-.sobrenos-container{
-    margin-top: 2rem;
-    padding: 2rem 1rem;
+@media (max-width: 900px){
+    .sobrenos-container img{
+        display: none;
+    }
 }
 
-.sobrenos-container div{
-    display: flex;
-    justify-content: space-around;
-    gap:40px;
-}
+@media (max-width: 500px){
+    .sobrenos{
+        padding: 10px;
+    }
 
-.sobrenos-container div img{
-    height: 560px;
+    .sobrenos-container div{
+        padding: 12px;       
+    }
+
+    .sobrenos-container div p{
+        font-size: 34px;
+        text-align: center;
+    }
 }

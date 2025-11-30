@@ -1,70 +1,91 @@
 .contato{
     background-color: #153448;
-    padding: 1.4rem 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .copy{
-    margin-top: 2rem;
-    text-align: center;
+    margin-top: 1rem;
     color: white;
-    font-size: 22px;
+    font-size: 28px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
 }
 
 .contanier-footer{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    align-items: center;
 }
 
-.contanier-footer h3{
-    color: white;
-    font-size: 30px;
+.footer-item{
+    margin-bottom: 2rem;
 }
 
-.contanier-footer p{
+.footer-item h3, p, a{
     color: white;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-size: 24px;
 }
 
-.contanier-footer a{
-    color: white;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
+.footer-item div h3{
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    width: 12ch;
 }
 
 .footer-item div{
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin-bottom: 1rem;
-}
-
-.footer-item div h3{
-    text-align: center;
-    width: 12ch;
-}
-
-.footer-contato{
-    width: 340px;
 }
 
 .footer-contato h3{
     text-align: center;
-    color: #D8AE71;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 1rem;
 }
+
 .footer-contato div{
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 1rem;
+    gap: 14px;
 }
 
-.footer-contato div a{
-    padding: 0;
+@media (max-width:900px){
+    .contanier-footer{
+        width: initial;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .copy{
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
+@media (max-width:480px){
+    .footer-item img{
+        display: none;
+    }
+
+    .footer-item div h3{
+        width: initial;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy{
+        text-align: center;
+        font-size: 22px;
+    }
 }

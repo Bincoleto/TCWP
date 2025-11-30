@@ -1,16 +1,29 @@
 .navegacao{
     background-color: #153448;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem ;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navegacao a{
+    color: white;
+    font-size: 28px;
+    line-height: 1.125;
 }
 
 .navegacao ul{
+    width: 100%;
     display: flex;
-    gap: 20px;
-    padding: 1.4rem 2rem;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.navegacao li a{
-    color: white;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 100;
+@media (max-width: 900px){
+    .navegacao ul{
+        justify-content: center;
+        gap: 18px;
+    }
 }
