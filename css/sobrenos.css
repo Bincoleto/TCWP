@@ -1,62 +1,71 @@
-.sobrenos{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 2rem ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+.sobrenos {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
-.sobrenos h2{
-    color: #153448;
-    font-size: 68px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
-    text-align: center;
+.sobrenos h2 {
+  color: #153448;
+  font-size: 68px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  text-align: center;
 }
 
-.sobrenos-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.sobrenos-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.sobrenos-container div{
-    padding: 20px 40px;
-    display: flex;
-    justify-content: center;
-    gap: 140px;
+.sobrenos-div {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: center;
+  gap: 80px;
 }
 
-.sobrenos-container div p{
+.sobrenos-div p {
+  width: 30ch;
+  font-size: 44px;
+  color: #153448;
+}
+
+@media (max-width: 1300px) {
+  .sobrenos-div p {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sobrenos-container img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .sobrenos {
+    padding: 10px;
+    gap: 14px;
+  }
+
+  .sobrenos h2 {
+    margin-top: 2rem;
     font-size: 48px;
-    color: #153448;
-}
+  }
 
-@media (max-width:1300px){
-    .sobrenos-container div p{
-        font-size: 32px;
-    }
-}
+  .sobrenos-div {
+    padding: 20px 10px;
+    gap: 0;
+  }
 
-@media (max-width: 900px){
-    .sobrenos-container img{
-        display: none;
-    }
-}
-
-@media (max-width: 500px){
-    .sobrenos{
-        padding: 10px;
-    }
-
-    .sobrenos-container div{
-        padding: 12px;       
-    }
-
-    .sobrenos-container div p{
-        font-size: 34px;
-        text-align: center;
-    }
+  .sobrenos-div p {
+    width: initial;
+    font-size: 28px;
+    text-align: center;
+  }
 }
