@@ -1,4 +1,20 @@
-banner-wrapper {
+.banner {
+  padding: 20px;
+  background-color: #3c5b6f;
+}
+
+.banner-list {
+  overflow: hidden;
+}
+
+.banner-wrapper img {
+  border-radius: 22px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-wrapper {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 28rem;
