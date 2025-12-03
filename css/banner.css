@@ -1,0 +1,45 @@
+banner-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 28rem;
+  justify-items: stretch;
+  grid-gap: 20px;
+  animation: slide 12s linear infinite alternate;
+}
+
+@keyframes slide {
+  /* to {
+    translate: calc(-4 * 28rem);
+  } */
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+/* Até 880px */
+@media (max-width: 880px) {
+  .banner-wrapper {
+    grid-auto-columns: minmax(10rem, 16rem);
+    gap: 16px;
+  }
+
+  .banner-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Até 480px */
+@media (max-width: 480px) {
+  .banner-wrapper {
+    grid-auto-columns: minmax(8rem, 12rem);
+    gap: 12px;
+  }
+
+  .banner-wrapper img {
+    border-radius: 12px;
+  }
+}
