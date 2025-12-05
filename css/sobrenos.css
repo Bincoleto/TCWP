@@ -25,10 +25,11 @@
 
 .sobretexto p{
   color: #153448;
-  font-size: 46px;
+  font-size: 42px;
   font-family: Georgia, 'Times New Roman', Times, serif; 
   line-height: 1.4;
   width: 80%; 
+  text-align: justify;
 }
 
 .sobretexto{
@@ -45,6 +46,7 @@
 @media (max-width: 1400px){
   .sobretexto p{
     font-size: 32px;
+    text-align: justify;
   }
 }
 
@@ -65,7 +67,7 @@
 
   .sobretexto p{
     width: initial;
-    text-align: center;
+    text-align: justify;
     font-size: 22px;
     padding: 6px;
   }
