@@ -23,13 +23,25 @@
   gap: 40px;
 }
 
+.sobretexto{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .sobretexto p{
   color: #153448;
-  font-size: 42px;
+  font-size: 34px;
   font-family: Georgia, 'Times New Roman', Times, serif; 
   line-height: 1.4;
   width: 80%; 
   text-align: justify;
+}
+
+.sobretexto-comprar{
+  font-size: 28px!important;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
 }
 
 .sobretexto{
@@ -65,10 +77,21 @@
     padding: 0 10px;
   }
 
+  .sobrenos{
+    margin: 0;
+    gap: 18px;
+  }
+
   .sobretexto p{
     width: initial;
     text-align: justify;
     font-size: 22px;
     padding: 6px;
+  }
+
+  .sobretexto-comprar{
+    font-size: 18px!important;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
   }
 }
