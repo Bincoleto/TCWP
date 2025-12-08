@@ -70,7 +70,7 @@
 
   .sobrenos h2{
     width: initial;
-    font-size: 40px ;
+    font-size: 40px!important;
   }
   
   .sobrenos-container{

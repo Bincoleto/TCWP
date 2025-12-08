@@ -1,0 +1,161 @@
+.produtos{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 40px;
+}
+
+.titulo-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.titulo-section h2{
+    font-size: 68px;
+    color: #153448;   
+}
+
+/* Lista de pedais */
+.produtos-lista{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 10px;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px; */
+}
+
+/*Card pedal*/
+.boutique-card {
+    background: #153448;
+    border-radius: 16px;
+    padding: 18px;
+    position: relative;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    transition: 0.3s ease;
+}
+
+.boutique-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.65);
+}
+
+.badge-used {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: #9b1c31;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px 0 8px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/* Imagem Pedal*/
+.image-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-area img {
+    width: 380px;
+    height:  380px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.7));
+}
+
+/*Textos*/
+.content {
+    margin-top: 18px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #e6e6e6;
+}
+
+.brand {
+    font-size: 14px;
+    color: #9ea3b0;
+}
+
+.rating {
+    margin: 10px 0 16px;
+    color: #c79aff;
+    font-size: 15px;
+}
+
+.rating span {
+    color: #bdbdbd;
+}
+
+/*Valores*/
+.prices {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.old {
+    text-decoration: line-through;
+    color: #8b8b8b;
+    font-size: 14px;
+}
+
+.new {
+    font-size: 22px;
+    font-weight: 800;
+    color: #c9a86a;
+}
+
+/* BOTÃO */
+.buy-btn {
+    width: 100%;
+    padding: 14px;
+    background: #6b3fa0;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.buy-btn:hover {
+    background: #7f4cc4;
+    box-shadow: 0 6px 14px rgba(123, 60, 200, 0.4);
+}
+
+@media (max-width:900px){
+    .titulo-section h2{
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 600px){
+    .titulo-section img{
+        display: none;
+    }
+    .titulo-section h2{
+        text-align: center;
+        font-size: 56px;
+    }
+}
