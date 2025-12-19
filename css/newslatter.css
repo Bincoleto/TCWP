@@ -8,17 +8,18 @@
 .contanier-newslatter{
     max-width: 100%;
     display: flex;
-    gap: 40px;
+    gap: 80px;
 }
 
 .newslatter-item h2{
     color: white;
-    font-size: 64px;
+    font-size: 56px;
     margin-bottom: 1rem;
 }
 
 .newslatter-item p{
-    font-size: 24px ;
+    width: 70%;
+    font-size: 20px ;
     margin-bottom: 1rem;
 }
 
@@ -29,10 +30,14 @@
     gap: 20px;
 }
 
+.email label{
+    display: none;
+}
+
 .email input{
     width: 70%;
     border-radius: 12px;
-    font-size: 38px;
+    font-size: 24px;
     padding: 1rem;
 }
 
@@ -41,8 +46,9 @@
     border-radius: 12px;
     color: white;
     width: 30%;
-    font-size: 38px;
+    font-size: 28px;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .email button:hover{
