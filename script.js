@@ -36,4 +36,7 @@ document
     }
 
     window.open(url, "_blank");
+
+    // ✅ Limpa todos os campos do formulário
+    event.target.reset();
   });
