@@ -177,31 +177,41 @@
     <!-- Fim Sobre nós -->
 
     <!-- Inicio Contato -->
-    <section aria-label="newslatter" class="newslatter" id="newslatter">
-      <div class="contanier-newslatter">
-        <div class="newslatter-item">
-          <h2>Receba novidades</h2>
-          <p>
-            Inscreva-se em nossa newsletter para receber novidades, dicas e
-            promoções exclusivas
+    <section aria-label="contato" class="contato" id="contato">
+      <div class="contanier-contato">
+        <div class="contato-formulario">
+          <p class="contato-texto-forte">
+            Gostou de algum pedal?
+            <br />
+            Entra em contato com agente abaixo!!
           </p>
-          <form action="./teste.php" method="post" class="form">
-            <div class="email">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu email"
-                required
-              />
 
-              <button>Inscreva-se</button>
+          <form id="form-whatsapp">
+            <div>
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" required />
             </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div>
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" required />
+            </div>
+
+            <div>
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" rows="4" cols="40"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
           </form>
         </div>
 
-        <div class="newslatter-img">
+        <div class="contato-img">
           <img src="./img/imagem newslatter.png" alt="Imagem newslatter" />
         </div>
       </div>
@@ -219,7 +229,7 @@
           <p>Sua loja de pedais novos e usados</p>
         </div>
 
-        <div class="footer-contato" id="contato">
+        <div class="footer-contato">
           <h3>Contato</h3>
           <div>
             <a
@@ -238,5 +248,7 @@
       </p>
     </footer>
     <!-- Fim Rodapé -->
+
+    <script src="script.js"></script>
   </body>
 </html>
