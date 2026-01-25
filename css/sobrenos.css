@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 960px){
+@media (max-width: 990px){
   .sobrenos{
     padding: 12px;
     gap: 8px;
@@ -82,6 +82,9 @@
     gap: 18px;
   }
 
+  .sobretexto{
+    gap: 14px;
+  }
   .sobretexto p{
     width: initial;
     text-align: justify;
@@ -93,5 +96,9 @@
     font-size: 18px!important;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
+  }
+
+  .copy{
+    text-align: center;
   }
 }
