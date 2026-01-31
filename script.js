@@ -56,3 +56,43 @@ document.querySelectorAll(".boutique-card").forEach((card) => {
     updateCarousel();
   });
 });
+
+const telefoneWhatsApp = "5514988060686"; // seu número com DDI
+
+function isMobile() {
+  return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(
+    navigator.userAgent,
+  );
+}
+
+document.querySelectorAll(".buy-btn").forEach((botao) => {
+  botao.addEventListener("click", () => {
+    const card = botao.closest(".boutique-card");
+
+    const nomeProduto = card.querySelector(".title").innerText;
+    const marca = card.querySelector(".brand").innerText;
+    const preco = card.querySelector(".new").innerText;
+
+    const mensagem = `
+Olá! Tenho interesse no produto abaixo:
+Produto: ${nomeProduto}
+Marca: ${marca}
+Preço: ${preco}
+Produto ainda se encontra disponivel?
+    `.trim();
+
+    const texto = encodeURIComponent(mensagem);
+
+    let url;
+
+    if (isMobile()) {
+      // 📱 Abre o app do WhatsApp
+      url = `whatsapp://send?phone=${telefoneWhatsApp}&text=${texto}`;
+    } else {
+      // 💻 Abre o WhatsApp Web
+      url = `https://web.whatsapp.com/send?phone=${telefoneWhatsApp}&text=${texto}`;
+    }
+
+    window.open(url, "_blank");
+  });
+});
